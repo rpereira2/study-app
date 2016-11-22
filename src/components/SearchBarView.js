@@ -1,8 +1,8 @@
 import React from 'react';
-import { Navbar, FormGroup, FormControl, Button } from 'react-bootstrap'
+import { Navbar, FormGroup, FormControl, Button } from 'react-bootstrap';
 
 
-const SearchBarView = ({ results }) => {
+const SearchBarView = ({ getResultsFromApi }) => {
     return (
     <Navbar>
         <Navbar.Text pullLeft>
@@ -16,7 +16,7 @@ const SearchBarView = ({ results }) => {
                 <FormControl id='navBarSearchForm' type="text" placeholder="Enter Subject Here" />
             </FormGroup>
             {' '}
-            <Button type="submit" onClick={ () => results }>
+            <Button type="submit" onClick={ () => getResultsFromApi }>
             Submit
             </Button>
         </Navbar.Form>

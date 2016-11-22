@@ -39,7 +39,7 @@ export const getResultsFromApi = (data) => {
   return dispatch => {
     dispatch(requestData())
     return fetch(`https://api.quizlet.com/2.0/search/sets?q={results}`)
-      .then(response => response.json())
+      .then(response => console.log(response))
       .then(results => dispatch(receiveData(data.results)))
   }
 }
