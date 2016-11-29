@@ -14,7 +14,7 @@ const receiveData = (results) => {
   }
 }
 
-const getSets = (title) => {
+export const getSets = (title) => {
   return {
     type: 'GET_SETS',
     title
@@ -38,8 +38,9 @@ const showDefinition = (definition) => {
 export const getResultsFromApi = (data) => {
   return dispatch => {
     dispatch(requestData())
-    return fetch(`https://api.quizlet.com/2.0/search/sets?q={results}`)
-      .then(response => console.log(response))
-      .then(results => dispatch(receiveData(data.results)))
+    return fetch(`https://api.quizlet.com/2.0/search/sets?client_id=tSY7EmRENd&q={data}`)
+      .then(response => response.json())
+      .then(results => console.log(results))
   }
 }
+

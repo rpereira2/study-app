@@ -9,8 +9,8 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
   return {
-    getResultsFromApi: () => {
-      return dispatch(getResultsFromApi())
+    getResultsFromApi: (data) => {
+      return dispatch(getResultsFromApi(data))
     }
   }
 }

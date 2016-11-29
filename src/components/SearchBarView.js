@@ -16,7 +16,7 @@ const SearchBarView = ({ getResultsFromApi }) => {
                 <FormControl id='navBarSearchForm' type="text" placeholder="Enter Subject Here" />
             </FormGroup>
             {' '}
-            <Button type="submit" onClick={ () => getResultsFromApi }>
+            <Button type="submit" onClick={ () => getResultsFromApi() }>
             Submit
             </Button>
         </Navbar.Form>

@@ -18,5 +18,6 @@ const FlashcardDisplayView = ({ card }) => {
     )
 }
 
+
 export default FlashcardDisplayView
 
