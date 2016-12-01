@@ -1,5 +1,6 @@
 import FlashcardDisplayView from '../components/FlashcardDisplayView'
 import { connect } from 'react-redux'
+import showCard from '../actions'
 
 const mapStateToProps = (state) => {
   return {
@@ -7,13 +8,16 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(FlashcardDisplayView)
+const mapDispatchToProps = (dispatch) => {
+  return {
+    showCard: (card) => {
+      return dispatch(showCard(card))
+    }
+  }
+}
 
 
-/* Where does this go? ES5 to ES6
-
-
-const onCardClick = () => {
+/*const onCardClick = () => {
         switch (this.state.selected == {term}) {
             this.setState({
                 selected: {term}
@@ -26,10 +30,11 @@ const onCardClick = () => {
                 });
             }
         }
-    },
+    },*/
     
-    render: function() {
-        return <Card text={this.state[this.state.selected]}
-                     onClick={this.onCardClick} />;
-    }
-});*/
+    
+    
+    
+export default connect(mapStateToProps)(FlashcardDisplayView)
+
+

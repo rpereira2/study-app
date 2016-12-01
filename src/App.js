@@ -11,7 +11,8 @@ class App extends Component {
       <div className="App">
         <SearchBar />
         <Loader />
-        
+        <FlashcardSet />
+        <FlashcardDisplay />
         
       </div>
     );

@@ -6,13 +6,18 @@ import getSets from '../actions'
 const mapStateToProps = (state) => {
   console.log(state)
   return {
-    term: state.sets.subject
+    results: state.sets.results.title
   }
 }
 
-/*const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
   return {
-  
-  }*/
+    getSets: (title) => {
+      return dispatch(getSets(title))
+    }
+  }
+}
 
-export default connect(mapStateToProps)(FlashcardSetView)
+
+export default connect(mapStateToProps, mapDispatchToProps)(FlashcardSetView)
+

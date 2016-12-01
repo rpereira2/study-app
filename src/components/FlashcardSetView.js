@@ -1,21 +1,19 @@
 import React from 'react'
-import { Grid, Row, Col, } from 'react-bootstrap'
+import { ListGroup, ListGroupItem } from 'react-bootstrap'
 
-const FlashcardSetView = ({ title }) => {
-  console.log(title)
+const FlashcardSetView = ({ results }) => {
   return (
-    <Grid>
-      // {title.map((title, id) =>
-        <Row key={id}>
-          <Col md={12}>
-            <ul>
-                <li>{title}</li>
-            </ul>
-          </Col>
-        </Row>
-      )}
-    </Grid>
+    <ListGroup>
+       {results.map((sets, title, id) => {
+
+        <ListGroupItem key={id}>
+         {sets.title} Choose One: {title}
+        </ListGroupItem>
+      })
+       }
+    </ListGroup>
   )
 }
 
 export default FlashcardSetView
+

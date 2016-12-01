@@ -12,13 +12,19 @@ const SearchBarView = ({ getResultsFromApi }) => {
         Happy Studying!
         </Navbar.Text>
         <Navbar.Form>
+            <form onSubmit={(e) => {
+            e.preventDefault()
+            let userInput = e.target.input.value
+            getResultsFromApi(userInput)
+            }}> 
             <FormGroup>
-                <FormControl id='navBarSearchForm' type="text" placeholder="Enter Subject Here" />
+                <FormControl id='navBarSearchForm' name="input" type="text" placeholder="Enter Subject Here" />
             </FormGroup>
             {' '}
-            <Button type="submit" onClick={ () => getResultsFromApi() }>
+            <Button type="submit" >
             Submit
             </Button>
+            </form>
         </Navbar.Form>
     </Navbar>
     )
