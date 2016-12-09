@@ -2,17 +2,17 @@ import React from 'react'
 import { ListGroup, ListGroupItem } from 'react-bootstrap'
 
 const FlashcardSetView = ({ results }) => {
-  return (
-    <ListGroup>
-       {results.map((sets, title, id) => {
-
-        <ListGroupItem key={id}>
-         {sets.title} Choose One: {title}
-        </ListGroupItem>
-      })
-       }
-    </ListGroup>
-  )
+  console.log(results)
+ return (
+   <ListGroup>
+      <h4> Choose a Set of Flashcards: </h4>
+      {results.map((set, index) => {
+        return  <ListGroupItem key ={index}>
+                {set.title}
+              </ListGroupItem>
+      })}
+</ListGroup>
+ )
 }
 
 export default FlashcardSetView

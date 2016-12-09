@@ -48,7 +48,9 @@ export const getResultsFromApi = (data) => {
     dispatch(requestData())
     return fetch(`https://api.quizlet.com/2.0/search/sets?client_id=tSY7EmRENd&q=${data}`)
       .then(response => response.json())
+      
       .then(results => dispatch(receiveData(results.sets)))
   }
+
 }
 

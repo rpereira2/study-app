@@ -3,8 +3,9 @@ import { connect } from 'react-redux'
 import { getResultsFromApi } from '../actions'
 
 const mapStateToProps = (state) => {
+  console.log(state)
   return {
-    results: state.searchResults.results
+    results: state.sets.results
   }
 }
 const mapDispatchToProps = (dispatch) => {

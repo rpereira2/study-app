@@ -17,20 +17,7 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 
-/*const onCardClick = () => {
-        switch (this.state.selected == {term}) {
-            this.setState({
-                selected: {term}
-            });
-        }
-        case {
-             (this.state.selected == {definition}) {
-                this.setState({
-                    selected: {definition}
-                });
-            }
-        }
-    },*/
+
     
     
     

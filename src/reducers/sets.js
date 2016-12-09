@@ -9,17 +9,7 @@ const sets = (state = initialState, action) => {
   switch (action.type) {
     case 'GET_SETS':
       return Object.assign({}, state, { 
-         title: action.title 
-      })
-    default:
-      return state
-  }
-}
-
-
-
-const results = (state = initialState, action) => {
-  switch (action.type) {
+         title: action.title }) 
     case 'REQUEST_DATA':
       return Object.assign({}, state, { loading: true })
     case 'RECEIVE_DATA':
@@ -27,10 +17,15 @@ const results = (state = initialState, action) => {
         loading: false,
         results: action.results
       })
+
     default:
       return state
   }
 }
 
-export default results 
+
+
+
+
+export default sets
 
