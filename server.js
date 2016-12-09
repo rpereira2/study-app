@@ -13,8 +13,8 @@ const port = 8080
 
 app.post('/create-card', (req, res) => {
     let card = new Card()
-    card.term = 'CSS'
-    card.definition = 'Cascading Style Sheets'
+    card.term = 'HTML'
+    card.definition = 'HyperText Markup Language'
     card.save(err => {
       if (err)
           res.send(err)
@@ -33,7 +33,7 @@ app.get('/cards', (req, res) => {
 })
 
 app.delete('/cards/:id', (req, res)  => {
-    Card.find((err, _id) => {
+    Card.remove((err, _id) => {
           if (err)
             res.send(err);
 
