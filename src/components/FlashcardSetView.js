@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import { ListGroup, ListGroupItem } from 'react-bootstrap'
 
 const FlashcardSetView = ({ results }) => {
@@ -15,5 +15,4 @@ const FlashcardSetView = ({ results }) => {
  )
 }
 
-export default FlashcardSetView
-
+export default FlashcardSetView*/

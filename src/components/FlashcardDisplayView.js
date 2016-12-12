@@ -4,28 +4,34 @@ import { Panel } from 'react-bootstrap'
 
 
 
-const FlashcardDisplayView = ({ card }) => {
+
+const FlashcardDisplayView = ({ isFlipped, showCard }) => {
     return (
+      <div>
         <Panel>
           <FlipCard
             disabled={true}
-            flipped={this.state.isFlipped}
-            onFlip={this.handleOnFlip}
-            onKeyDown={this.handleKeyDown}
+            isFlipped={isFlipped}
+
           >
-          <div>
+            <div>
+
             <div>Front</div>
-              <button type="button" onClick={this.showBack}>Show back</button>
+              <button type="button" onClick={showCard}>Show back</button>
               <div><small>(manual flip)</small></div>
+
             </div>
-          <div>
+            <div>
             <div>Back</div>
-              <button type="button" ref="backButton" onClick={this.showFront}>Show front</button>
-              </div>
+              <button type="button" onClick={showCard}>Show front</button>
+            </div>
           </FlipCard>
-          </div>
+
           </Panel>
+        </div>
       );
 }
+
+
 
 export default FlashcardDisplayView

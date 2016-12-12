@@ -21,34 +21,22 @@ const receiveData = (results) => {
   }
 }*/
 
-export const showCard = (card) => {
+export const showCard = () => {
   return {
     type: 'SHOW_CARD',
-    card
+
   }
 }
 
 
-const showTerm = (term) => {
-    return {
-    type: 'SHOW_TERM',
-    isFlipped: false
-    }
-}
 
-const showDefinition = (definition) => {
-    return {
-    type: 'SHOW_DEFINITION',
-    isFlipped: true
-    }
-}
 
 export const getResultsFromApi = (data) => {
   return dispatch => {
     dispatch(requestData())
     return fetch(`https://localhost:8080/cards${data}`)
       .then(response => response.json())
-      .then(results => dispatch(receiveData(cards)))
+      .then(results => dispatch(receiveData(results)))
   }
 
 }

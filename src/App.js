@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import SearchBar from './containers/SearchBar'
 import Loader from './containers/Loader'
-import FlashcardSet from './containers/FlashcardSet'
+// import FlashcardSet from './containers/FlashcardSet'
 import FlashcardDisplay from './containers/FlashcardDisplay'
 
 class App extends Component {
@@ -11,9 +11,9 @@ class App extends Component {
       <div className="App">
         <SearchBar />
         <Loader />
-        <FlashcardSet />
+        {/*FlashcardSet /> */}
         <FlashcardDisplay />
-        
+
       </div>
     );
   }
