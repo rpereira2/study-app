@@ -32,15 +32,6 @@ app.get('/cards', (req, res) => {
       })
 })
 
-app.delete('/cards/:id', (req, res)  => {
-    Card.remove((err, _id) => {
-          if (err)
-            res.send(err);
-
-          res.json({ msg: 'card deleted'})
-    })
-
-})
 
 app.listen(port, () => {
   console.log('server is listening woohoo')
