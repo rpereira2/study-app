@@ -1,9 +1,9 @@
 const initialState = {
-    id: ' ',
-    term: ' ',
-    definition: ' '
-    
-}
+    return {
+      isFlipped: false
+    }
+
+};
 
 
 const cards = (state = initialState, action) => {
@@ -11,21 +11,15 @@ const cards = (state = initialState, action) => {
         case 'SHOW_TERM':
             return Object.assign({}, state, {
                 term: action.term
-            })        
+            })
         case 'SHOW_DEFINITION':
             return Object.assign ({}, state, {
                 definition: action.definition
             })
-            
+
         default:
       return state
   }
 }
 
 export default cards
-    
-
-    
-
-
-
