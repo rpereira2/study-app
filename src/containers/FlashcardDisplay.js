@@ -23,4 +23,4 @@ const mapDispatchToProps = (dispatch) => {
 
 
 
-export default connect(mapStateToProps)(FlashcardDisplayView)
+export default connect(mapStateToProps, mapDispatchToProps)(FlashcardDisplayView)

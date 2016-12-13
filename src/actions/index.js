@@ -29,7 +29,7 @@ export const showCard = () => {
 }
 
 
-
+// method: headers: and body: ??
 
 export const getResultsFromApi = (data) => {
   return dispatch => {
