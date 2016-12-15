@@ -5,14 +5,13 @@ import { Panel } from 'react-bootstrap'
 
 
 
-const FlashcardDisplayView = ({ isFlipped, showCard }) => {
+const FlashcardDisplayView = ({ isFlipped, showCard, results }) => {
     return (
       <div>
         <Panel>
           <FlipCard
             disabled={true}
             isFlipped={isFlipped}
-
           >
             <div>
 

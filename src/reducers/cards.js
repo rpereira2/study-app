@@ -1,5 +1,6 @@
 const initialState = {
-      isFlipped: false
+      isFlipped: false,
+      results: []
 };
 
 
@@ -9,8 +10,13 @@ const cards = (state = initialState, action) => {
             return Object.assign({}, state, {
                 isFlipped: !state.isFlipped
             })
+            case 'RECEIVE_DATA':
+              return Object.assign({}, state, {
+                loading: false,
+                results: action.results
+              })
 
-        default:
+              default:
       return state
   }
 }

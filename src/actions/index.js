@@ -29,12 +29,12 @@ export const showCard = () => {
 }
 
 
-// method: headers: and body: ??
 
-export const getResultsFromApi = (data) => {
+
+export const getResultsFromApi = () => {
   return dispatch => {
     dispatch(requestData())
-    return fetch(`https://localhost:8080/cards${data}`)
+    return fetch(`http://localhost:8080/cards`)
       .then(response => response.json())
       .then(results => dispatch(receiveData(results)))
   }
