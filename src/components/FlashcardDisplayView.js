@@ -2,35 +2,32 @@ import React from 'react'
 import FlipCard from 'react-flipcard'
 import { Panel } from 'react-bootstrap'
 
-
-
-
-const FlashcardDisplayView = ({ isFlipped, showCard, results }) => {
+const FlashcardDisplayView = ( {getCards, isFlipped, results, showCard} ) => {
+  console.log('results prop equals', results)
     return (
       <div>
-        <Panel>
-          <FlipCard
-            disabled={true}
-            isFlipped={isFlipped}
-          >
-            <div>
+      {results.map((result, index) => (
+        <Panel key={index}>
+            <FlipCard
+              disabled={true}
+              flipped={isFlipped}
+            >
+              <div>
 
-            <div>Front</div>
-              <button type="button" onClick={showCard}>Show back</button>
-              <div><small>(manual flip)</small></div>
+              <div>{result.term}</div>
+                <button type="button" onClick={showCard}>Show Definition</button>
+                <div><small>(manual flip)</small></div>
 
-            </div>
-            <div>
-            <div>Back</div>
-              <button type="button" onClick={showCard}>Show front</button>
-            </div>
-          </FlipCard>
-
+              </div>
+              <div>
+              <div>{result.definition}</div>
+                <button type="button" onClick={showCard}>Show Term</button>
+              </div>
+            </FlipCard>
           </Panel>
+        ))}
         </div>
       );
 }
-
-
 
 export default FlashcardDisplayView
