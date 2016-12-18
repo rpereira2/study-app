@@ -7,21 +7,21 @@ const FlashcardDisplayView = ( {getCards, isFlipped, results, showCard} ) => {
     return (
       <div>
       {results.map((result, index) => (
-        <Panel key={index}>
+        <Panel className="box" key={index}>
             <FlipCard
-              disabled={true}
+              disabled={false}
               flipped={isFlipped}
             >
               <div>
 
               <div>{result.term}</div>
-                <button type="button" onClick={showCard}>Show Definition</button>
-                <div><small>(manual flip)</small></div>
+                {/*<button type="button" onClick={showCard}>Show Definition</button>*/}
+
 
               </div>
               <div>
               <div>{result.definition}</div>
-                <button type="button" onClick={showCard}>Show Term</button>
+                {/*}<button type="button" onClick={showCard}>Show Term</button>*/}
               </div>
             </FlipCard>
           </Panel>

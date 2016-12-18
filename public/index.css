@@ -1,0 +1,43 @@
+body {
+  background-color: wheat;
+}
+.header {
+  text-align: center;
+  color: saddlebrown;
+}
+
+.box {
+  background-color: burlywood;
+}
+
+.ReactFlipCard {
+    margin: 25px;
+    text-align: center;
+    font-size: xx-large;
+  }
+  .ReactFlipCard,
+  .ReactFlipCard__Front,
+  .ReactFlipCard__Back {
+    box-sizing: border-box;
+    width: 650px;
+    height: 325px;
+  }
+  .ReactFlipCard__Front,
+  .ReactFlipCard__Back {
+    border-radius: 10px;
+    border: 1px solid saddlebrown;
+    padding: 25px;
+  }
+  .ReactFlipCard__Front {
+    background-color: linen;
+    color: orangered;
+  }
+  .ReactFlipCard__Back {
+    background-color: linen;
+    color: orange;
+  }
+
+  button {
+    margin-top: 50px;
+    font-size: large
+  }
