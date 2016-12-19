@@ -34,7 +34,7 @@ export const showCard = () => {
 export const getResultsFromApi = () => {
   return dispatch => {
     dispatch(requestData())
-    return fetch(`http://localhost:8080/cards`)
+    return fetch(`https://tranquil-savannah-77989.herokuapp.com/cards`)
       .then(response => response.json())
       .then(results => dispatch(receiveData(results)))
   }

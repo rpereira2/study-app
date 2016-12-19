@@ -1,5 +1,6 @@
 body {
   background-color: wheat;
+  /*font-family: 'Raleway', sans-serif;*/
 }
 .header {
   text-align: center;
@@ -30,14 +31,19 @@ body {
   }
   .ReactFlipCard__Front {
     background-color: linen;
-    color: orangered;
+    color: darkolivegreen;
   }
   .ReactFlipCard__Back {
     background-color: linen;
-    color: orange;
+    color: olivedrab;
   }
 
   button {
     margin-top: 50px;
     font-size: large
+  }
+
+  .footer {
+    text-align: center;
+    color: saddlebrown;
   }
