@@ -1,8 +1,9 @@
-#Allergen Free Recipes
+#Study App
 
 
 ##Documentation
 `GET /cards` returns a list of all flashcards
+
 `POST /create-card` These are the properties and values they would take  
 ```
         {term: string,
