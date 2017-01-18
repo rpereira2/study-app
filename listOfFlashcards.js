@@ -12,7 +12,7 @@ const listOfFlashcards = {
         
     },{
         'term': 'AJAX',
-        'definition': 'Stands for Asynchronous JavaScript and XML. AJAX is typically used for creating dynamic web applications and allows for asynchronous data retrieval without having to reload the page',
+        'definition': 'Stands for Asynchronous JavaScript and XML. AJAX is typically used for creating dynamic web applications and allows for asynchronous data retrieval without having to reload.',
         
     },{
         'term': 'Back End',

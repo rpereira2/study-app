@@ -1,6 +1,6 @@
 body {
   background-color: wheat;
-  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
 }
 .header {
   text-align: center;
@@ -8,20 +8,20 @@ body {
 }
 
 .box {
-  background-color: burlywood;
-}
+  background-color: wheat;
+   }
 
 .ReactFlipCard {
     margin: 25px;
     text-align: center;
-    font-size: xx-large;
+    font-size: x-large;
   }
   .ReactFlipCard,
   .ReactFlipCard__Front,
   .ReactFlipCard__Back {
     box-sizing: border-box;
-    width: 650px;
-    height: 325px;
+    width: 450px;
+    height: 225px;
   }
   .ReactFlipCard__Front,
   .ReactFlipCard__Back {
