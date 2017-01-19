@@ -45,5 +45,13 @@ body {
 
   .footer {
     text-align: center;
+  
+  }
+
+  .backButton {
     color: saddlebrown;
+    background-color: linen;
+    border: 1px solid saddlebrown;
+    border-radius: 5px;
+    margin-bottom: 25px;
   }

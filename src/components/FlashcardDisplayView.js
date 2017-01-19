@@ -1,13 +1,13 @@
 import React from 'react'
 import FlipCard from 'react-flipcard'
-import { Panel } from 'react-bootstrap'
+// import { Panel } from 'react-bootstrap'
 
 const FlashcardDisplayView = ( {getCards, isFlipped, results, showCard} ) => {
   console.log('results prop equals', results)
     return (
       <div>
       {results.map((result, index) => (
-        <Panel className="box" key={index}>
+        <div className="box" key={index}>
             <FlipCard
               disabled={false}
               flipped={isFlipped}
@@ -24,7 +24,7 @@ const FlashcardDisplayView = ( {getCards, isFlipped, results, showCard} ) => {
                 {/*}<button type="button" onClick={showCard}>Show Term</button>*/}
               </div>
             </FlipCard>
-          </Panel>
+          </div>
         ))}
         </div>
       );
