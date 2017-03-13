@@ -32,6 +32,7 @@ export const showCard = () => {
 
 
 export const getResultsFromApi = () => {
+  
   return dispatch => {
     dispatch(requestData())
     return fetch(`https://tranquil-savannah-77989.herokuapp.com/cards`)

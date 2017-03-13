@@ -21,7 +21,7 @@ const FlashcardDisplayView = ( {getCards, isFlipped, results, showCard} ) => {
               </div>
               <div>
               <div>{result.definition}</div>
-                {/*}<button type="button" onClick={showCard}>Show Term</button>*/}
+                {/*<button type="button" onClick={showCard}>Show Term</button>*/}
               </div>
             </FlipCard>
           </div>

@@ -4,7 +4,10 @@ import LoaderView from '../components/LoaderView'
 const mapStateToProps = (state) => {
   console.log(state)
   return {
-    loading: state.sets.loading
+    loading: state.cards.loading,
+    
+   
+
   }
 }
 
