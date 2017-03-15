@@ -60,7 +60,7 @@ body {
     margin-bottom: 25px;
   }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
     .ReactFlipCard,
     .ReactFlipCard__Front,
     .ReactFlipCard__Back {
