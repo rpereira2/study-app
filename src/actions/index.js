@@ -6,6 +6,14 @@ const requestData = () => {
   }
 }
 
+const loadSpinner = () => {
+
+  return {
+    type: 'LOAD-SPINNER'
+  }
+
+}
+
 const receiveData = (results) => {
   return {
     type: 'RECEIVE_DATA',
