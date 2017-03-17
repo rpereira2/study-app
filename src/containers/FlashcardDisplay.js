@@ -19,6 +19,7 @@ class FlashcardDisplay extends Component {
 
 const mapStateToProps = (state) => {
   return {
+  
     isFlipped: state.cards.isFlipped,
     results: state.cards.results
   }

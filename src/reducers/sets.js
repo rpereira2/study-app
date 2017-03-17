@@ -7,6 +7,8 @@ const initialState = {
 
 const sets = (state = initialState, action) => {
   switch (action.type) {
+    case 'LOAD_SPINNER':
+      return Object.assign ({}, state, { loading: true })
     case 'GET_SETS':
       return Object.assign({}, state, { 
          title: action.title }) 

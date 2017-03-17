@@ -6,6 +6,10 @@ const initialState = {
 
 const cards = (state = initialState, action) => {
     switch (action.type) {
+        case 'LOAD-SPINNER':
+          return Object.assign ({}, state, {
+            loading: true,
+          })
         case 'SHOW_CARD':
             return Object.assign({}, state, {
                 isFlipped: !state.isFlipped

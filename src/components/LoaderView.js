@@ -1,5 +1,5 @@
 import React from 'react'
-import { loadSpinner} from '../actions'
+import { loadSpinner } from '../actions'
 var Spinner = require('react-spinkit');
 
 const LoaderView = ({ isLoading }) => {
@@ -8,11 +8,11 @@ const LoaderView = ({ isLoading }) => {
         	< div >
 
             {            
-                <Spinner className="spinner" spinnerName='three-bounce' />
+                // <Spinner className="spinner" spinnerName='three-bounce' noFadeIn/> 
             	
                 // isLoading ? < p > Loading... < /p> : ''
 
-            } 
+            }
             < /div>
             )
         }
